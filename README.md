@@ -1,6 +1,16 @@
 # Terraform Azure Provisioning Virtual Machines
 Terraform is an open-source infrastructure as code (IaC) tool that enables you to define and manage cloud infrastructure resources using a declarative configuration language. It supports multiple cloud platforms, including Microsoft Azure.
 
+## Table of Contents
+  - [How it works on Azure](#how-it-works-on-azure)
+  - [What this project will do](#what-this-project-will-do)
+  - [Variables need to be changed](#variables-need-to-be-changed)
+  - [Installation](#installation)
+  - [Connect into the Virtual Instances](#connect-into-the-virtual-instances)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+
 ## How it works on Azure
 In summary, using Terraform with Azure can help you automate the deployment and management of your Azure resources, while also providing greater control and reproducibility over your infrastructure.
 
@@ -37,16 +47,6 @@ In the variables.tf file you need to change the "default" parameter of the varia
 - backup_policy_name
 - subscription_id
 
-## Table of Contents
-- [Terraform Azure Provisioning Virtual Machines](#terraform-azure-provisioning-virtual-machines)
-  - [How it works on Azure](#how-it-works-on-azure)
-  - [What this project will do](#what-this-project-will-do)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Connect into the Virtual Instances](#connect-into-the-virtual-instances)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
 
 ## Installation
 You need to first install Terraform on your local machine or a build server. You can download Terraform from the official website or use a package manager like Homebrew.
