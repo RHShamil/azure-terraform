@@ -33,7 +33,7 @@ In this article, you'll learn how to:
 - Use SSH to connect to the virtual machine
 
 ## Variables need to be changed
-In the variables.tf file you need to change the "default" parameter of the variables to your desired values. 
+In the `variables.tf` file you need to change the `default` parameter of the variables to your desired values. 
 
 - resource_group_location
 - resource_group_name
@@ -58,16 +58,13 @@ You need to first install Terraform & azurecli on your local machine or a build 
 - Azure Account: You must have an active Microsoft Azure account. If you do not have one already, you can sign up for a free Azure trial account.
 
 - Initialize Terraform: Before you can use Terraform to create or modify Azure resources, you need to initialize Terraform in your project directory. The initialization downloads the required Terraform modules and plugins. Run the terraform command:
-
 `terraform init`
 
 - Run Terraform commands: Once you have initialized Terraform, you can run Terraform commands to create or modify Azure resources. For example, you can use the terraform plan command to preview the changes Terraform will make to your infrastructure, and the terraform apply command to apply those changes. Run the terraform command:
-
 `terraform plan`
 `terraform apply`
 
 - Destroy resources: When you no longer need the resources you created with Terraform, you can use the terraform destroy command to remove them. This ensures that you are not billed for resources that are no longer in use.  Run the terraform command:
-
 `terraform destroy`
 
 ## Connect into the Virtual Instances
