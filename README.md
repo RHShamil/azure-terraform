@@ -7,6 +7,8 @@ In summary, using Terraform with Azure can help you automate the deployment and 
 ## What this project will do
 In this article, you'll learn how to:
 
+- Create a resource group
+- Create tags for all resources
 - Create a virtual network
 - Create a subnet
 - Create a public IP address
@@ -16,7 +18,24 @@ In this article, you'll learn how to:
 - Create a storage account for boot diagnostics
 - Create SSH key
 - Create a virtual machine
+- Create an Azure recovery service vault
+- Create a backup policy
+- Configure the vm disk with backup policy
 - Use SSH to connect to the virtual machine
+
+## Variables need to be changed
+In the variables.tf file you need to change the "default" parameter of the variables to your desired values. 
+
+- resource_group_location
+- resource_group_name
+- resource_tags
+- vm_name
+- vm_computer_name
+- vm_admin_username
+- os_disk_name
+- backup_vault_name
+- backup_policy_name
+- subscription_id
 
 ## Table of Contents
 - [Terraform Azure Provisioning Virtual Machines](#terraform-azure-provisioning-virtual-machines)
